@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Live Football Scoreboard library (POC)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Football World Cup Scoreboard library that shows all the ongoing matches and their scores.
+The scoreboard supports the following operations:
+1. Start a new match, assuming initial score 0 – 0 and adding it the scoreboard. This should capture following parameters:
+a. Home team
+b. Away team
+2. Update score. This should receive a pair of absolute scores: home team score and away team score.
+3. Finish match currently in progress. This removes a match from the scoreboard.
+4. Get a summary of matches in progress ordered by their total score. The matches with the
+same total score will be returned ordered by the most recently started match in the scoreboard.
 
-## Available Scripts
+"create-react-app" was taken as a starter kit for the demo 
+## Getting Started
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Make sure you have Node.js and npm installed on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/Kairos777/football_scoreboard.git
+   
+2. Install dependencies:
+   ```bash
+   npm install
 
-### `npm run build`
+3. To run the application locally (open localhost:3000 and check console), use the following command:
+    ```bash
+   npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Testing:
+    ```bash
+    npm test
